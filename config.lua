@@ -9,7 +9,7 @@ Config.SlughterEveryAnimal = false
 
 -- protection system againts players
 -- if hunters have this weapons they can't shoot players with it!
-Config.ShootingProtection = false
+Config.ShootingProtection = true
 Config.ProtectedWeapons = { 'weapon_musket' }
 -- End
 
@@ -24,7 +24,7 @@ Config.HuntingHours = {
 --
 
 Config.BaitIndicator = {
-    active = false,
+    active = true,
     model = 'prop_peanut_bowl_01'
 }
 
@@ -32,7 +32,7 @@ Config.BaitCooldown = 1000 * 30 -- 1000 per sec
 Config.SpawningTimer = 1000 * 10 -- script will wait until "SpawningTimer" time out then it will spwan animal
 
 Config.AnimalsEatingSpeed = 1000 * 15 -- how much animals will wait in baits location
-Config.AnimalsFleeView = 15.0 -- animal Flee range if they get to see players
+Config.AnimalsFleeView = 30.0 -- animal Flee range if they get to see players
 
 Config.BaitPlacementSpeed = math.random(1000 * 5, 1000 * 7)
 Config.SlaughteringSpeed = math.random(1000 * 5, 1000 * 7)
