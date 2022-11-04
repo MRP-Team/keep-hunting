@@ -138,7 +138,8 @@ function putQbTargetAllOnAnimals()
     for _, v in pairs(Config.Animals) do
         exports['qb-target']:AddTargetModel(v.model, {
             options = { {
-                icon = "fas fa-sack-dollar",
+                targeticon = 'fa-solid fa-paw',
+                icon = "fas fa-feather",
                 label = "slaughter",
                 canInteract = function(entity)
                     if not IsPedAPlayer(entity) then
@@ -162,7 +163,8 @@ function putQbTargetOnEntity(ped)
     exports['qb-target']:AddTargetEntity(ped, {
         options = {
             {
-                icon = "fas fa-sack-dollar",
+                targeticon = 'fa-solid fa-paw',
+                icon = "fas fa-feather",
                 label = "slaughter",
                 canInteract = function(entity)
                     return IsEntityDead(entity)
