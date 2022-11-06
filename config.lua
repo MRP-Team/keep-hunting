@@ -12,6 +12,8 @@ Config.SlughterEveryAnimal = false
 Config.ShootingProtection = true
 Config.ProtectedWeapons = { 'weapon_musket' }
 -- End
+Config.MinStress = 2 -- minimum amount of stress to relieve
+Config.MaxStress = 4 -- maximum amount of stress to relieve
 
 -- hunting hours
 Config.HuntingHours = {

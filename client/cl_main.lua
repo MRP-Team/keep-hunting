@@ -93,6 +93,7 @@ AddEventHandler('keep-hunting:client:slaughterAnimal', function(entity)
         }, {}, {}, {}, function()
         ToggleSlaughterAnimation(false, 0)
         if AnimalLootMultiplier:read(entity) ~= nil and AnimalLootMultiplier:read(entity) ~= false then
+            TriggerServerEvent('hud:server:RelieveStress', math.random(Config.MinStress, Config.MaxStress)) -- Remove stress.
             TriggerServerEvent('keep-hunting:server:AddItem', animal, NetworkGetNetworkIdFromEntity(entity),
                 AnimalLootMultiplier:read(entity))
         else
