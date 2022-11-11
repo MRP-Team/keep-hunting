@@ -86,7 +86,7 @@ Config.boneHitMultiplier = {
 Config.Animals = { {
     model = "a_c_deer",
     -- {legal area spawn chance , illegal area spawn chance}
-    spwanRarity = { 10, 20 },
+    spwanRarity = { 5, 20 },
     hash = -664053099,
     -- HOW to use "Loots" element:
     -- { {"ITEMNAME" , Chance , Sell Price} , {"ITEMNAME" , Chance , Sell Price} ,  ....}
@@ -94,37 +94,37 @@ Config.Animals = { {
     -- IMPORTANT: script will skip duplicate loots and only use one of them (first one)
     -- script will skip other prices and only uses the first seen value.
     -- IMPORTANT: if you leave the price with nil value players can't sell those items to Vendor.
-    Loots = {{"deerhorns", 100, 150}}
+    Loots = {{"deerhorns", 100, 150}, {"raw_sausage", 99, 100}}
 }, {
     model = "a_c_pig",
     spwanRarity = { 20, 0 },
     hash = -1323586730,
-    Loots = {{"pigpelt", 100, 150}}
+    Loots = {{"pig_leather", 100, 150}, {"raw_pork", 99, 100}}
 }, {
     model = "a_c_boar",
     spwanRarity = { 20, 20 },
     hash = -832573324,
-    Loots = {{"boartusks", 100, 150}}
+    Loots = {{"boartusks", 100, 150}, {"raw_ham", 99, 100}}
 }, {
     model = "a_c_mtlion",
-    spwanRarity = { 0, 30 },
+    spwanRarity = { 5, 30 },
     hash = 307287994,
     Loots = {{"cougarclaw", 100, 150}}
 }, {
     model = "a_c_cow",
-    spwanRarity = { 5, 0 },
+    spwanRarity = { 15, 0 },
     hash = -50684386,
-    Loots = {{"cowpelt", 100, 150}}
+    Loots = {{"cowpelt", 100, 150}, {"raw_beef", 99, 100}}
 }, {
     model = "a_c_coyote",
-    spwanRarity = { 15, 10 },
+    spwanRarity = { 10, 10 },
     hash = 1682622302,
     Loots = {{"coyotepelt", 100, 150}}
 }, {
     model = "a_c_rabbit_01",
     spwanRarity = { 15, 20 },
     hash = -541762431,
-    Loots = {{"rabbitfur", 100, 150}}
+    Loots = {{"rabbitfur", 100, 150}, {"raw_bacon", 99, 100}}
 }, {
     model = "a_c_pigeon",
     spwanRarity = { 10, 0 },
@@ -132,7 +132,7 @@ Config.Animals = { {
     Loots = {{"birdfeather", 100, 150}}
 }, {
     model = "a_c_seagull",
-    spwanRarity = { 5, 0 },
+    spwanRarity = { 0, 0 },
     hash = -745300483,
     Loots = {{"birdfeather", 100, 150}}
 } }
